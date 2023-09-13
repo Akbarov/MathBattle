@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.tutacademy.mathbattle.ui.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/starting_layout">
+        <action
+            android:id="@+id/action_startFragment_to_playFragment"
+            app:destination="@id/playFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.tutacademy.mathbattle.ui.PlayFragment"
+        android:label="PlayFragment"
+        tools:layout="@layout/play_layout">
+        <action
+            android:id="@+id/action_playFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/playFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.tutacademy.mathbattle.ui.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/result_layout">
+        <action
+            android:id="@+id/action_resultFragment_to_playFragment"
+            app:destination="@id/playFragment"
+            app:popUpTo="@id/resultFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

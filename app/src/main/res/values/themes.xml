@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MathBattle" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/green</item>
+    </style>
+
+    <style name="Theme.MathBattle" parent="Base.Theme.MathBattle" />
+
+    <style name="CircularImageStyle">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

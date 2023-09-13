@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Math Battle</string>
+    <string name="start">Начинать</string>
+    <string name="math_battle">Матем битва</string>
+    <string name="score">Счет: %d</string>
+    <string name="you_scored">Вы забили: %d</string>
+    <string name="best_scores">Лучшие результаты</string>
+</resources>

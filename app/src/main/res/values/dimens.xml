@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size">120dp</dimen>
+    <dimen name="progressBarHeight">10dp</dimen>
+    <dimen name="margin_vertical">16dp</dimen>
+</resources>

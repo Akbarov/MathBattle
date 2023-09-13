@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Math Battle</string>
+    <string name="start">Start</string>
+    <string name="math_battle">Math Battle</string>
+    <string name="score">Score: %d</string>
+    <string name="you_scored">You scored: %d</string>
+    <string name="equation" translatable="false">%d %s %d</string>
+    <string name="best_scores">Best scores</string>
+</resources>

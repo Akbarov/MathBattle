@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Math Battle</string>
+    <string name="start">Boshlash</string>
+    <string name="math_battle">Matematik O\'yin</string>
+    <string name="score">Natija: %d</string>
+    <string name="you_scored">Natijangiz: %d</string>
+    <string name="best_scores">Yaxshi natijalar</string>
+</resources>

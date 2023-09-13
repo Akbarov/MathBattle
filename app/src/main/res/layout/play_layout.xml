@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/green"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="score: "
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="@id/topView" />
+
+    <TextView
+        android:id="@+id/equationTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="8+9"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@id/topView"
+        app:layout_constraintTop_toTopOf="@id/topView" />
+
+    <TextView
+        android:id="@+id/answerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="=17"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintTop_toBottomOf="@id/equationTv" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:indicatorColor="@color/red"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="@id/topView"
+        app:trackThickness="@dimen/progressBarHeight" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@id/topView" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/truBtn"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:contentDescription="@string/start"
+        android:src="@drawable/check_circle_24"
+        android:tint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/falseBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topView"
+        app:shapeAppearanceOverlay="@style/CircularImageStyle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/falseBtn"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:contentDescription="@string/start"
+        android:src="@drawable/cancel_24"
+        android:tint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/truBtn"
+        app:layout_constraintTop_toBottomOf="@id/topView"
+        app:shapeAppearanceOverlay="@style/CircularImageStyle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
